@@ -1,0 +1,93 @@
+body{
+    background-color: aliceblue;
+    @font-face {
+        font-family: "Barlow Semi Condensed";
+        src: url("https://fonts.google.com/specimen/Barlow+Semi+Condensed");
+    }
+}
+
+.grids{
+    display:grid;
+    grid-template-columns: repeat(3,300px);
+    gap: 20px;
+    grid-template-rows: 400px 400px;
+    /* grid-template-columns: 40% 40%; */
+    grid-template-areas: 
+    "daniel daniel jonathan kira"
+    "jeanette patrick patrick kira";
+}
+
+.grid1{
+    background-color: hsl(263, 55%, 52%);
+    color:hsl(0, 0%, 100%);
+    border-radius: 10px;
+    padding: 20px;
+    grid-area:daniel;
+}
+
+.grid2{
+    background-color: hsl(217, 19%, 35%);
+    color:hsl(0, 0%, 100%);
+    border-radius: 10px;
+    padding: 20px;
+    grid-area: jonathan;
+}
+
+.grid3, .grid5{
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.grid4{
+    background-color: hsl(219, 29%, 14%);
+    color:hsl(0, 0%, 100%);
+    border-radius: 10px;
+    padding: 20px;
+    grid-area: patrick;
+}
+
+h6{
+    color:hsl(0, 0%, 100%, 50%);
+}
+
+p{
+    color:hsl(0, 0%, 100%, 70%);
+}
+
+.grid3 h6{
+    color:hsl(0,100%,0%,50%);
+}
+
+.grid3 p{
+    color:hsl(0,100%,0%,70%);
+}
+
+.grid5 h6{
+    color:hsl(0,100%,0%,50%);
+}
+
+.grid5 p{
+    color:hsl(0,100%,0%,70%);
+}
+
+img.roundedcorner{
+    border-radius: 50px;
+}
+
+.grid5{
+    grid-area: kira;
+}
+
+.grid3{
+    grid-area: jeanette;
+}
+
+.flex {
+     display:flex;
+    align-items: center;
+}
+
+.designation{
+    margin: 10px;
+}
